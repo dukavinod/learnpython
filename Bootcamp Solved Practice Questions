@@ -1,0 +1,437 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "b6915605-5aa8-473c-a1ec-58e0f4e6e03a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " a\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Alphabet\n"
+     ]
+    }
+   ],
+   "source": [
+    "inp = input()\n",
+    "if inp.isnumeric():\n",
+    "    print('integer')\n",
+    "if inp.isalpha():\n",
+    "    print('Alphabet')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "d8189c5c-098d-478a-b501-0f6380fa0828",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[1;31mSignature:\u001b[0m \u001b[0mchr\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mi\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m/\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+       "\u001b[1;31mDocstring:\u001b[0m Return a Unicode string of one character with ordinal i; 0 <= i <= 0x10ffff.\n",
+       "\u001b[1;31mType:\u001b[0m      builtin_function_or_method\n"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "chr??"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "39790805-56d6-4cc1-a41e-7acb2783401b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "65\n",
+      "90\n",
+      "97\n",
+      "122\n",
+      "A\n",
+      "Z\n",
+      "a\n",
+      "z\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "\n",
+    "first_capital = ord('A')\n",
+    "print(first_capital)\n",
+    "last_capital = ord('Z')\n",
+    "print(last_capital)\n",
+    "first_small = ord('a')\n",
+    "print(first_small)\n",
+    "last_small = ord('z')\n",
+    "print(last_small)\n",
+    "\n",
+    "print(chr(65))\n",
+    "print(chr(90))\n",
+    "print(chr(97))\n",
+    "print(chr(122))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "id": "948be40e-1d3c-4a33-b815-7a4dc979a6be",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n",
+      "6\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 95,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x= ord(input())\n",
+    "next_char = chr(x+1)\n",
+    "previous_char = chr(x-1)\n",
+    "print(previous_char)\n",
+    "print(next_char)\n",
+    "type(next_char)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "id": "95408f9e-37f1-414f-871f-a13076bcf403",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " upgrad\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['p', 'g', 'r', 'd', 'p', 'g', 'r', 'd']\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 130,
+   "id": "b44b605e-f268-4a2e-bfba-5c964a48d2ec",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " upgrad\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "pgrd"
+     ]
+    }
+   ],
+   "source": [
+    "k = []\n",
+    "for x in input():\n",
+    "    if x not in 'aeiou':\n",
+    "        k.append(x)\n",
+    "        x.join(k)\n",
+    "        print(x, end = '')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 133,
+   "id": "3a34970d-4eee-4799-af15-0fd632caee13",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " AData UScience\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ADt Scnc"
+     ]
+    }
+   ],
+   "source": [
+    "s=input()\n",
+    "for x in s:\n",
+    "    if x not in 'AEIOUaeiou':\n",
+    "        print(x, end = '')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "c0c3913a-1fe0-425f-9410-137e2edb76be",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(range(1,11))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "f2200fae-7257-4aef-b637-d13dbeba3e30",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6 * 1 = 6\n",
+      "6 * 2 = 12\n",
+      "6 * 3 = 18\n",
+      "6 * 4 = 24\n",
+      "6 * 5 = 30\n",
+      "6 * 6 = 36\n",
+      "6 * 7 = 42\n",
+      "6 * 8 = 48\n",
+      "6 * 9 = 54\n",
+      "6 * 10 = 60\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = int(input())\n",
+    "y = list(range(1,11))\n",
+    "for i in y:\n",
+    "    result = x*i\n",
+    "    print(f'{x} * {i} = {result}')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "c596c3bb-d86c-4343-b45c-d02bca2ca62c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any sentence : PEOPLE in the bus are old\n",
+      "enter any character: o\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "input_sentence = input('enter any sentence :')\n",
+    "input_char = input('enter any character:')\n",
+    "count = 0\n",
+    "\n",
+    "for i in input_sentence:\n",
+    "    if input_char == i or input_char.upper() == i:\n",
+    "        count +=1\n",
+    "print(count)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "75333f88-1fd5-4763-bbff-33d481e1cba8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any number : 5678910\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "36\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = input('enter any number :')\n",
+    "total =0\n",
+    "for i in x:\n",
+    "    j = int(i)\n",
+    "    total = total+j\n",
+    "print(total)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "2d0c683e-c325-43d2-b7e4-44ef8c701b2b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any number: 34560908907\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Number of odd digits: 5\n",
+      "Number of non-zero even digits: 3\n",
+      "Number of zeros: 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = input(\"enter any number:\")\n",
+    "count_zero = count_even = count_odd = 0\n",
+    "for i in x:\n",
+    "    j = int(i)\n",
+    "    if j ==0:\n",
+    "        count_zero +=1\n",
+    "    elif j%2 ==0:\n",
+    "        count_even +=1\n",
+    "    else:\n",
+    "        count_odd +=1\n",
+    "print(\"Number of odd digits:\", count_odd)\n",
+    "print(\"Number of non-zero even digits:\",count_even)\n",
+    "print(\"Number of zeros:\", count_zero)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "21436a68-4d70-4503-bdea-7dd182833db4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any sentence: Programming is 100% fun\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "pROGRAMMINGISFUN"
+     ]
+    }
+   ],
+   "source": [
+    "x = input(\"enter any sentence:\")\n",
+    "\n",
+    "for i in x:\n",
+    "    if i.isupper():\n",
+    "        i=i.lower()\n",
+    "    elif i.islower():\n",
+    "        i= i.upper()\n",
+    "    else:\n",
+    "        i.isalnum()\n",
+    "        continue\n",
+    "    print(i,end = '')\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
